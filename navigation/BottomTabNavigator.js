@@ -25,11 +25,8 @@ const styles = StyleSheet.create({
 
 export default function BottomTabNavigator({ navigation, route }) {
 
-  navigation.setOptions({
-    headerTitle: (props) => <HeaderTitle />,
-    headerLeft: () => (<TabBarIconFe focused={true} name="camera" style={styles.headerLogo} size={25} />),
-    headerRight: () => (<TabBarIconSl focused={true} name="paper-plane" style={styles.headerLogo} size={20} />),
-  })
+  let navigationOptions = getNavigationOptionsBasedOnRoute(route);
+  navigation.setOptions(navigationOptions);
 
   return (
     <BottomTab.Navigator initialRouteName={INITIAL_ROUTE_NAME}
@@ -79,13 +76,21 @@ export default function BottomTabNavigator({ navigation, route }) {
   );
 }
 
-function getHeaderTitle(route) {
+const getNavigationOptionsBasedOnRoute = (route) => {
   const routeName = route.state?.routes[route.state.index]?.name ?? INITIAL_ROUTE_NAME;
 
   switch (routeName) {
     case 'Home':
-      return 'How to get started';
-    case 'Links':
-      return 'Links to learn more';
+      return {
+        headerTitle: (props) => (<HeaderTitle />),
+        headerLeft: () => (<TabBarIconFe focused={true} name="camera" style={styles.headerLogo} size={25} />),
+        headerRight: () => (<TabBarIconSl focused={true} name="paper-plane" style={styles.headerLogo} size={20} />),
+      };
+    default:
+      return {
+        headerTitle: (props) => (<React.Fragment/>),
+        headerLeft: () => (<React.Fragment/>),
+        headerRight: () => (<React.Fragment/>),
+      };
   }
 };
