@@ -1,35 +1,62 @@
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import * as React from 'react';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import TabBarIcon from '../components/TabBarIcon';
+//Screens:
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
 
-const BottomTab = createBottomTabNavigator();
+//Componentes auxiliares:
+import { TabBarIconMd, TabBarIconFa } from '../components/TabBarIcon';
+
+//Variables base:
 const INITIAL_ROUTE_NAME = 'Home';
+const BottomTab = createBottomTabNavigator();
 
 export default function BottomTabNavigator({ navigation, route }) {
-  // Set the header title on the parent stack navigator depending on the
-  // currently active tab. Learn more in the documentation:
-  // https://reactnavigation.org/docs/en/screen-options-resolution.html
-  navigation.setOptions({ headerTitle: getHeaderTitle(route) });
+
+  navigation.setOptions({ headerTitle: getHeaderTitle(route), });
 
   return (
-    <BottomTab.Navigator initialRouteName={INITIAL_ROUTE_NAME}>
+    <BottomTab.Navigator initialRouteName={INITIAL_ROUTE_NAME}
+      tabBarOptions={{ showLabel: false }}>
       <BottomTab.Screen
         name="Home"
         component={HomeScreen}
         options={{
-          title: 'Get Started',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-code-working" />,
+          title: 'Home',
+          tabBarIcon: ({ focused }) => <TabBarIconMd focused={focused} name="md-home" />,
         }}
       />
       <BottomTab.Screen
-        name="Links"
+        name="Search"
         component={LinksScreen}
         options={{
-          title: 'Resources',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-book" />,
+          title: 'Search',
+          tabBarIcon: ({ focused }) => <TabBarIconMd focused={focused} name="md-search" />,
+        }}
+      />
+      <BottomTab.Screen
+        name="Add"
+        component={LinksScreen}
+        options={{
+          title: 'Add',
+          tabBarIcon: ({ focused }) => <TabBarIconFa focused={focused} name="plus-square-o" />,
+        }}
+      />
+      <BottomTab.Screen
+        name="Likes"
+        component={LinksScreen}
+        options={{
+          title: 'Likes',
+          tabBarIcon: ({ focused }) => <TabBarIconMd focused={focused} name="md-heart-empty" />,
+        }}
+      />
+      <BottomTab.Screen
+        name="Profile"
+        component={LinksScreen}
+        options={{
+          title: 'Profile',
+          tabBarIcon: ({ focused }) => <TabBarIconMd focused={focused} name="md-book" />,
         }}
       />
     </BottomTab.Navigator>
