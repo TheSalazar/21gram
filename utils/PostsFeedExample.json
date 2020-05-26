@@ -1,0 +1,60 @@
+[
+    {
+        "type": "MEDIA_UPDATE",
+        "username": "TheSalazar",
+        "userProfilePicture": "https://images.pexels.com/photos/1086723/pexels-photo-1086723.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "pictures": [
+            {
+                "mediaSnapshot": "https://images.unsplash.com/photo-1590349760088-c592adab9da0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+                "lowResMediaSnapshot": "https://images.unsplash.com/photo-1590349760088-c592adab9da0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+            }
+        ],
+        "userLikes": true,
+        "comments": [
+            {
+                "username": "TheSalazar",
+                "lowResMediaSnapshot": "https://images.unsplash.com/photo-1590229216137-57ebacf5d1a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+                "comment": "La cultura no se censura, basta ya de discriminación"
+            }
+        ],
+        "likesMetadata": {
+            "totalLikes": 71,
+            "releveantUserWhoLikes": "nish",
+            "userWhoLikesProfilePicture": "https://images.unsplash.com/photo-1590184575616-7a26747bca56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80"
+        }
+    },
+    {
+        "type": "MEDIA_UPDATE",
+        "username": "Nish",
+        "userProfilePicture": "https://images.unsplash.com/photo-1590184575616-7a26747bca56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80",
+        "pictures": [
+            {
+                "mediaSnapshot": "https://images.unsplash.com/photo-1590305782262-6015e755bd1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+                "lowResMediaSnapshot": "https://images.unsplash.com/photo-1590305782262-6015e755bd1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+            }
+        ],
+        "userLikes": false,
+        "comments": [
+            {
+                "username": "iHaveSuchAGiantName",
+                "lowResMediaSnapshot": "https://images.unsplash.com/photo-1590346994493-89bf67c210e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+                "comment": "Wow, can't believe it how much I love it!"
+            },
+            {
+                "username": "iHaveSuchAGiantName",
+                "lowResMediaSnapshot": "https://images.unsplash.com/photo-1590346994493-89bf67c210e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+                "comment": "Wow, can't believe it how much I love it!"
+            },
+            {
+                "username": "iHaveSuchAGiantName",
+                "lowResMediaSnapshot": "https://images.unsplash.com/photo-1590346994493-89bf67c210e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+                "comment": "Wow, can't believe it how much I love it!"
+            }
+        ],
+        "likesMetadata": {
+            "totalLikes": 12,
+            "releveantUserWhoLikes": "TheSalazar",
+            "userWhoLikesProfilePicture": "https://images.pexels.com/photos/1086723/pexels-photo-1086723.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        }
+    }
+]

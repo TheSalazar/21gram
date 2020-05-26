@@ -9,13 +9,14 @@ const styles = StyleSheet.create({
     profilePicture: {
         width: 30,
         height: 30,
-        borderRadius: 15
+        borderRadius: 30 / 2
     },
 });
 
 const ProfilePicture = (props) => {
     return (
-        <Image style={styles.profilePicture} source={{ uri: profilePictureLink, }} />
+        <Image style={{ ...styles.profilePicture, ...props.style }}
+            source={{ uri: props.profilePicture || profilePictureLink, }} />
     );
 }
 

@@ -1,50 +1,39 @@
 import React from 'react';
-import { View, ScrollView, StyleSheet, Text } from 'react-native';
+import { View, ScrollView, StyleSheet } from 'react-native';
 
 //Componentes auxiliares:
-import StoriesFeed from './components/StoriesFeed';
+import PostsFeed from './components/PostsFeed.jsx';
+import StoriesFeed from './components/StoriesFeed.jsx';
+import HorizontalBreak from '../../components/HorizontalBreak.js';
 
 //Estilos y elementos base:
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: 'rgb(242,242,242)',
     },
-    statusContainer:{
+    statusContainer: {
         // backgroundColor:'green'
     },
     feedContainer: {
         paddingTop: 30,
+    },
+    horizontalSplit: {
+        borderBottomColor: 'rgb(242,242,242)',
+        borderBottomWidth: 0.75,
     }
 });
 
-class HomeScreen extends React.Component {
-
-    render() {
-        return (
-            <View style={styles.container}>
-                <ScrollView contentContainerStyle={styles.statusContainer}>
-                    <StoriesFeed/>
-
-                    <Text style={{ backgroundColor: "green", height: 100 }}>Hola</Text>
-                    <Text style={{ backgroundColor: "red", height: 100 }}>Hola</Text>
-                    <Text style={{ backgroundColor: "green", height: 100 }}>Hola</Text>
-                    <Text style={{ backgroundColor: "red", height: 100 }}>Hola</Text>
-                    <Text style={{ backgroundColor: "green", height: 100 }}>Hola</Text>
-                    <Text style={{ backgroundColor: "red", height: 100 }}>Hola</Text>
-                    <Text style={{ backgroundColor: "green", height: 100 }}>Hola</Text>
-                    <Text style={{ backgroundColor: "red", height: 100 }}>Hola</Text>
-                    <Text style={{ backgroundColor: "green", height: 100 }}>Hola</Text>
-                    <Text style={{ backgroundColor: "red", height: 100 }}>Hola</Text>
-                    <Text style={{ backgroundColor: "green", height: 100 }}>Hola</Text>
-                    <Text style={{ backgroundColor: "red", height: 100 }}>Hola</Text>
-                </ScrollView>
-            </View>
-        );
-    }
-
-    //Métodos para renderizado:
-   
+let HomeScreen = (props) => {
+    return (
+        <View style={styles.container}>
+            <ScrollView contentContainerStyle={styles.statusContainer}>
+                <StoriesFeed />
+                <HorizontalBreak/>
+                <PostsFeed />
+            </ScrollView>
+        </View>
+    );
 }
 
 export default HomeScreen;
