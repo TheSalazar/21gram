@@ -10,7 +10,7 @@ import HomeScreen from '../screens/homeScreen/HomeScreen.jsx';
 //Componentes auxiliares:
 import HeaderTitle from '../components/HeaderTitle';
 import ProfilePicture from '../components/ProfilePicture';
-import { TabBarIconMd, TabBarIconFa, TabBarIconFe, TabBarIconSl } from '../components/TabBarIcon';
+import { TabBarIconMd, TabBarIconFa, TabBarIconFe, TabBarIconSl, TabBarIconFd } from '../components/TabBarIcon';
 
 //Variables base:
 const INITIAL_ROUTE_NAME = 'Home';
@@ -37,7 +37,7 @@ export default function BottomTabNavigator({ navigation, route }) {
         component={HomeScreen}
         options={{
           title: 'Home',
-          tabBarIcon: ({ focused }) => <TabBarIconFa focused={focused} name="home" />,
+          tabBarIcon: ({ focused }) => <TabBarIconFd focused={focused} name="home" />,
         }}
       />
       <BottomTab.Screen

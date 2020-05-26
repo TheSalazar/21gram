@@ -43,13 +43,13 @@ const styles = StyleSheet.create({
     },
     newStoryButtonBox: {
         top: 18,
-        left: 18,
+        left: 20,
         width: 17,
         height: 17,
         borderRadius: 17/2,
         alignItems:'center',
         justifyContent:'center',
-        backgroundColor: 'rgb(80,190,225)',
+        backgroundColor: 'rgb(88,149,238)',
         borderWidth: 1.5,
         borderColor: "#FFF"
     },

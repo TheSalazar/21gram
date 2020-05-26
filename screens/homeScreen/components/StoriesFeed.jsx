@@ -82,8 +82,6 @@ class StoriesFeed extends React.Component {
 
         let sortedFeedItems = [...directUnseenItems, ...nonDirectUnseenItems, ...alreadySeenItems];
         
-        console.log(alreadySeenItems);
-
         return sortedFeedItems.map((feedItem, i) => {
             let customStyle = {};
             if (!feedItem.seen) { customStyle = { ...customStyle, ...styles.unseenImage } };
