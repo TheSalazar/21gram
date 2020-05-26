@@ -12,33 +12,20 @@ const styles = StyleSheet.create({
     }
 });
 
-class PostsFeed extends React.Component {
+let PostsFeed = (props) => {
+    return (
+        <View style={{ ...styles.container }}>
+            {getPostsItems(props)}
+        </View>
+    );
+}
 
-    constructor() {
-        super();
-
-        this.state = {
-            postsItems: require('../../../utils/PostsFeedExample.json')
-        }
-    }
-
-    render() {
+const getPostsItems = (props) => {
+    return props.postsItems.map((item, i) => {
         return (
-            <View style={{ ...styles.container }}>
-                {this.getPostsItems()}
-            </View>
+            <PostItem data={item} index={i} key={"statusFeedItem." + i} />
         );
-    }
-
-    //Métodos para renderizado:
-    getPostsItems = () => {
-        return this.state.postsItems.map((item, i) => {
-            return (
-                <PostItem data={item} index={i}
-                    key={"statusFeedItem." + i + "." + (new Date()).getTime()} />
-            );
-        })
-    }
+    })
 }
 
 export default PostsFeed;
