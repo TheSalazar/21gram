@@ -3,8 +3,9 @@ import { StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 //Screens:
-import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
+import DefaultScreen from '../screens/DefaultScreen';
+import HomeScreen from '../screens/homeScreen/HomeScreen.jsx';
 
 //Componentes auxiliares:
 import HeaderTitle from '../components/HeaderTitle';
@@ -49,7 +50,7 @@ export default function BottomTabNavigator({ navigation, route }) {
       />
       <BottomTab.Screen
         name="Add"
-        component={LinksScreen}
+        component={DefaultScreen}
         options={{
           title: 'Add',
           tabBarIcon: ({ focused }) => <TabBarIconFa focused={focused} name="plus-square-o" />,
@@ -57,7 +58,7 @@ export default function BottomTabNavigator({ navigation, route }) {
       />
       <BottomTab.Screen
         name="Likes"
-        component={LinksScreen}
+        component={DefaultScreen}
         options={{
           title: 'Likes',
           tabBarIcon: ({ focused }) => <TabBarIconMd focused={focused} name="md-heart-empty" />,
@@ -65,7 +66,7 @@ export default function BottomTabNavigator({ navigation, route }) {
       />
       <BottomTab.Screen
         name="Profile"
-        component={LinksScreen}
+        component={DefaultScreen}
         options={{
           title: 'Profile',
           tabBarIcon: ({ focused }) => <ProfilePicture />,

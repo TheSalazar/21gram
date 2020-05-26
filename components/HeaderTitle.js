@@ -9,7 +9,7 @@ const HeaderTitle = (props) => {
     });
 
     if (!fontsLoaded) { return <AppLoading />; }
-    else { return (<Text style={{ fontFamily: 'Billabong', fontSize: 30 }}>21nstagram</Text>); }
+    else { return (<Text style={{ fontFamily: 'Billabong', fontSize: 30 }}>21-nstagram</Text>); }
 };
 
 export default HeaderTitle;

@@ -1,0 +1,44 @@
+[
+    {
+        "type": "MEDIA_UPDATE",
+        "username": "The Salazar",
+        "mediaSnapshot": "https://images.pexels.com/photos/1086723/pexels-photo-1086723.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "lowResMediaSnapshot": "https://images.unsplash.com/photo-1590212137432-75d202d38f7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+        "seen": false
+    },
+    {
+        "type": "LIVE_STREAM",
+        "username": "hereIAm",
+        "mediaSnapshot": "https://images.unsplash.com/photo-1590229216137-57ebacf5d1a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+        "lowResMediaSnapshot": "https://images.unsplash.com/photo-1590229216137-57ebacf5d1a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+        "seen": false
+    },
+    {
+        "type": "MEDIA_UPDATE",
+        "username": "Nicolas",
+        "mediaSnapshot": "https://images.unsplash.com/photo-1590345663334-145e2bd442ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1257&q=80",
+        "lowResMediaSnapshot": "https://images.unsplash.com/photo-1590345663334-145e2bd442ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1257&q=80",
+        "seen": true
+    },
+    {
+        "type": "MEDIA_UPDATE",
+        "username": "Nish",
+        "mediaSnapshot": "https://images.unsplash.com/photo-1590184575616-7a26747bca56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80",
+        "lowResMediaSnapshot": "https://images.unsplash.com/photo-1590212137432-75d202d38f7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+        "seen": false
+    },
+    {
+        "type": "MEDIA_UPDATE",
+        "username": "SalazarNG",
+        "mediaSnapshot": "https://images.unsplash.com/photo-1589566856690-fc68ac16845c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+        "lowResMediaSnapshot": "https://images.unsplash.com/photo-1589566856690-fc68ac16845c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+        "seen": true
+    },
+    {
+        "type": "LIVE_STREAM",
+        "username": "iHaveSuchAGiantName",
+        "mediaSnapshot": "https://images.unsplash.com/photo-1590346994493-89bf67c210e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+        "lowResMediaSnapshot": "https://images.unsplash.com/photo-1590346994493-89bf67c210e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+        "seen": false
+    }
+]

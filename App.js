@@ -4,7 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 
 import useCachedResources from './hooks/useCachedResources';
-import BottomTabNavigator from './navigation/BottomTabNavigator';
+import BottomTabNavigator from './navigation/NavigatorConfig';
 import LinkingConfiguration from './navigation/LinkingConfiguration';
 
 const Stack = createStackNavigator();
