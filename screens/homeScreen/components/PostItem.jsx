@@ -7,6 +7,7 @@ import ProfilePicture from '../../../components/ProfilePicture';
 import HorizontalBreak from '../../../components/HorizontalBreak';
 import { TabBarIconFe, TabBarIconSl, TabBarIconFa } from '../../../components/TabBarIcon';
 import { TextInput } from 'react-native-gesture-handler';
+import PicturesCarrousel from './PicturesCarrousel';
 
 //Estilos y elementos base:
 const screenHeight = Math.round(Dimensions.get('window').height);
@@ -80,10 +81,9 @@ let PostItem = (props) => {
             </View>
 
             <View style={{ ...styles.picturesBox }}>
-                <LoadableImage
+                <PicturesCarrousel
                     style={{ height: "100%", width: "100%" }}
-                    uri={props.data.pictures[0].mediaSnapshot}
-                    lowResUri={props.data.pictures[0].lowResMediaSnapshot} />
+                    pictures={props.data.pictures}/>
             </View>
 
             <View style={{ ...styles.footer }}>

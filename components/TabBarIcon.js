@@ -4,6 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { Foundation } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
 import { SimpleLineIcons } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import Colors from '../constants/Colors';
 
@@ -62,6 +63,21 @@ export const TabBarIconFd = (props) => {
       size={props.size || 30}
       style={{ marginBottom: -3 }}
       color={props.focused ? Colors.tabIconSelected : Colors.tabIconDefault}
+      style={{ ...props.style }}
+    />
+  );
+}
+
+export const TabBarIconMc = (props) => {
+  let color = props.focused ? Colors.tabIconSelected : Colors.tabIconDefault;
+  if (props.color) { color = props.color };
+
+  return (
+    <MaterialCommunityIcons
+      color={color}
+      name={props.name}
+      size={props.size || 30}
+      style={{ marginBottom: -3 }}
       style={{ ...props.style }}
     />
   );
