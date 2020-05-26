@@ -85,7 +85,7 @@ class HomeScreen extends React.Component {
                         break;
 
                     default:
-                        console.log("Error trayendo los posts: " + serverResponse.status);
+                        console.log("Error descargando los posts: " + serverResponse.status);
                         this.setState({ loadingPosts: false });
                         break;
                 }
