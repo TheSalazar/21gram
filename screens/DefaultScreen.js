@@ -133,9 +133,16 @@ function DevelopmentModeNotice() {
     );
 
     return (
-      <Text style={styles.developmentModeText}>
-        Al parecer sigo en construcción 😅
-      </Text>
+      <React.Fragment>
+        <Text style={styles.developmentModeText}>
+          Al parecer sigo en construcción 😅
+        </Text>
+
+        <Text style={{marginTop:50}}>
+          Un saludo a todo el equipo
+          <Text style={{ fontWeight: 'bold' }}> 21unicorns</Text>
+        </Text>
+      </React.Fragment>
     );
   } else {
     return (

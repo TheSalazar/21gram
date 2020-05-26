@@ -3,7 +3,6 @@ import { StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 //Screens:
-import LinksScreen from '../screens/LinksScreen';
 import DefaultScreen from '../screens/DefaultScreen';
 import HomeScreen from '../screens/homeScreen/HomeScreen.jsx';
 
@@ -42,7 +41,7 @@ export default function BottomTabNavigator({ navigation, route }) {
       />
       <BottomTab.Screen
         name="Search"
-        component={LinksScreen}
+        component={DefaultScreen}
         options={{
           title: 'Search',
           tabBarIcon: ({ focused }) => <TabBarIconMd focused={focused} name="md-search" />,
